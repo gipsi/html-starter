@@ -1,0 +1,76 @@
+<!Doctype html>
+
+<html lang="en">
+
+<head>
+
+<title>html-skeleton</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<style>
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: black;
+		color: white;
+	}
+	a {
+	    color: lightblue;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background: white;
+        color: black;
+    }
+}
+
+footer {
+background: navy;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: navy;
+  text-align: left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>html starter</h1> 
+<h2>Skeleton for a web page.</h2>
+</header>
+
+<p>
+<a href="https://dev.w3.org/html5/html-author/charref" target="_blank">Hello entities!</a>
+</p>
+
+<p>
+With <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" target="_blank">prefers-color-scheme</a> @media query
+</p>
+
+<footer>
+<a style="background: green; color: white;" href="index.html">&laquo;back</a>
+<a href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element">HTML Living Standard</a>
+<button id="go-back">Go back!</button>
+</footer>
+
+<script>
+window.onload = function(e) {
+  document.getElementById('go-back').addEventListener('click', e => {
+    window.history.back();
+  })
+}
+</script>
+</body>
+</html>
